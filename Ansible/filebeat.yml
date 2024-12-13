@@ -1,0 +1,27 @@
+---
+- name: Установка Filebeat
+  hosts: webservers
+  become: yes
+  gather_facts: true
+  vars:
+    kibana_host: 192.168.40.42:5601
+    elastic_host: 192.168.30.31:9200
+  tasks:
+  - name: Установка Filebeat
+    apt:
+      deb: "https://mirror.yandex.ru/mirrors/elastic/7/pool/main/f/filebeat/filebeat-7.15.1-amd64.deb"
+
+  - name: Копирование конфиг-файла Filebeat
+    template:
+      src: /home/user-bastion/filebeat.j2
+      dest: /etc/filebeat/filebeat.yml
+
+  - name: daemon_reload
+    systemd:
+      daemon_reload: true
+
+  - name: Перезапуск Filebeat
+    service:
+      name: filebeat
+      state: restarted
+      enabled: yes
