@@ -136,3 +136,5 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 12. С помощью Ansible разворачиваем стэк Elasticsearch, Kibana, Filebeat.
 
 13. В Yandex.Cloud реализуется резервное копирование, настроенное в соотвествии с требованиями дипломной работы.
+
+(https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок9.PNG)
