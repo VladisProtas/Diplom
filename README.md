@@ -147,7 +147,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок4.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок5.PNG)
 
-8. Результат настройки Zabbix под необходимые задачи и ссылка на него - http://51.250.31.127/zabbix.
+8. Результат настройки Zabbix под необходимые задачи и ссылка на него - http://89.169.173.188/zabbix.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок13.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок14.PNG)
