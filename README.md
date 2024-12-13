@@ -121,20 +121,34 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 5. Для дальнейшего развёртывания инфрструктуры используется Ansible на ВМ, которая выполняет роль bastion host.
 
-6. Содержание файла inventory.ini Ansible и проверка доступности хостов с помощью внунтреннй утилиты.
+6. Проверка доступности хостов с помощью утилиты с помощью Ansible создаётся два веб-сервера на основе Nginx.
 
-7. С помощью Ansible создаётся два веб-сервера на основе Nginx.
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок.PNG)
 
 8. Далее производиться создание и настройка балансировщика нагрузки.
 
 9. В результате создан сайт и возможно балансировать нагрузку между двумя веб-серверами.
 
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок1.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок3.PNG)
+
 10. С помощью Ansible создаётся Zabbix-сервер и Zabbix-агенты на двух веб-серверах.
+
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок4.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок5.PNG)
 
 11. Резуьтат настройки Zabbix под необходимые задачи.
 
 12. С помощью Ansible разворачиваем стэк Elasticsearch, Kibana, Filebeat.
 
-13. В Yandex.Cloud реализуется резервное копирование, настроенное в соотвествии с требованиями дипломной работы.
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок6.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок7.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок8.PNG)
+
+13. Результат развёртывания стэка ELK.
+
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок10.PNG)
+
+14. В Yandex.Cloud реализуется резервное копирование, настроенное в соотвествии с требованиями дипломной работы.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок9.PNG)
