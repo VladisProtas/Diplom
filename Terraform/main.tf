@@ -15,6 +15,7 @@ provider "yandex" {
 }
 
 #----------------- Webservers -----------------------------
+
 resource "yandex_compute_instance" "web-1" {
   name                      = "web-1"
   hostname                  = "web-1"
@@ -80,6 +81,7 @@ resource "yandex_compute_instance" "web-2" {
 }
 
 #----------------- Bastion -----------------------------
+
 resource "yandex_compute_instance" "bastion" {
   name                      = "bastion"
   hostname                  = "bastion"
@@ -115,6 +117,7 @@ resource "yandex_compute_instance" "bastion" {
 
 
 #----------------- Zabbix -----------------------------
+
 resource "yandex_compute_instance" "zabbix" {
   name                      = "zabbix"
   hostname                  = "zabbix"
@@ -149,6 +152,7 @@ resource "yandex_compute_instance" "zabbix" {
 }
 
 #----------------- Elasticsearch -----------------------------
+
 resource "yandex_compute_instance" "elasticsearch" {
   name                      = "elasticsearch"
   hostname                  = "elasticsearch"
@@ -182,6 +186,7 @@ resource "yandex_compute_instance" "elasticsearch" {
 }
 
 #----------------- Kibana -----------------------------
+
 resource "yandex_compute_instance" "kibana" {
   name                      = "kibana"
   hostname                  = "kibana"
