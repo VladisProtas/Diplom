@@ -137,4 +137,4 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 13. В Yandex.Cloud реализуется резервное копирование, настроенное в соотвествии с требованиями дипломной работы.
 
-(https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок9.PNG)
+!(https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок9.PNG)
