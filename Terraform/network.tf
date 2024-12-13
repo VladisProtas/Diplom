@@ -47,7 +47,7 @@ resource "yandex_vpc_subnet" "public-subnet" {
 }
 
 
-#----------------- target_group -----------------
+#----------------- Target_group -----------------
 
 resource "yandex_alb_target_group" "target-group" {
   name = "target-group"
@@ -136,6 +136,7 @@ resource "yandex_alb_load_balancer" "load-balancer" {
     }
   }
 }
+
 #----------------- Security_group -----------------
 
 resource "yandex_vpc_security_group" "internal-rules" {
