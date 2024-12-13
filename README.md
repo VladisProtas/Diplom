@@ -137,7 +137,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок19.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок20.PNG)
 
-6. В результате создан сайт и возможно балансировать нагрузку между двумя веб-серверами.
+6. В результате создан сайт и теперь возможно балансировать нагрузку между двумя веб-серверами, ссылка на сайт - http://51.250.42.58.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок1.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок3.PNG)
