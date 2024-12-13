@@ -1,0 +1,26 @@
+---
+- name: Установка Kibana
+  hosts: kibana
+  become: yes
+  vars:
+    elastic_httphost: 192.168.30.31
+  tasks:
+
+  - name: Установка пакета Kibana
+    apt:
+      deb: "https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-7.15.1-amd64.deb"
+
+  - name: Копирование конфиг-файла
+    template:
+      src: /home/user-bastion/kibana.j2
+      dest: /etc/kibana/kibana.yml
+
+  - name: daemon_reload
+    systemd:
+      daemon_reload: true
+
+  - name:  Перезапуск Kibana
+    service:
+      name: kibana
+      state: restarted
+      enabled: yes
