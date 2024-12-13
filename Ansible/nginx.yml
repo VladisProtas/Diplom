@@ -1,0 +1,33 @@
+---
+- name: Установка Nginx и настройка страницы
+  hosts: webservers
+  become: yes
+
+  tasks:
+
+    - name: Установка Nginx
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+
+    - name: Запуск Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Создание HTML-страницы
+      copy:
+        content: "<html><head><title> Netology-Diplom Protasov.V.A. </title></head><body><h1> Netology-Diplom Protasov.>        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+
+      notify:
+        - Restart Nginx
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
