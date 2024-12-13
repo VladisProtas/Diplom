@@ -125,7 +125,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 3. Для дальнейшего развёртывания инфрструктуры используется Ansible на ВМ, которая выполняет роль bastion host.
 
-![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок12.PNG)
 
 4. Проверка доступности хостов с помощью утилиты с помощью Ansible создаётся два веб-сервера на основе Nginx.
 
