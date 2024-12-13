@@ -111,44 +111,57 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 3. Ожидание моментального ответа на свой вопрос. Дипломные руководители — работающие инженеры, которые занимаются, кроме преподавания, своими проектами. Их время ограничено, поэтому постарайтесь задавать правильные вопросы, чтобы получать быстрые ответы :)
 
 ## Выполнение дипломной работы
-1. Для развёртывания инфраструктуры используется Terraform.
 
-2. Результат применения Terraform в Yandex.Cloud.
+1. Результат применения Terraform в Yandex.Cloud.
 
-3. 
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок11.PNG)
 
-4.
+2. Создаётся сеть и её подсети, а также группы безопасности и ресурсы для NAT.
 
-5. Для дальнейшего развёртывания инфрструктуры используется Ansible на ВМ, которая выполняет роль bastion host.
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок2.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок15.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок16.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок17.PNG)
 
-6. Проверка доступности хостов с помощью утилиты с помощью Ansible создаётся два веб-сервера на основе Nginx.
+3. Для дальнейшего развёртывания инфрструктуры используется Ansible на ВМ, которая выполняет роль bastion host.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок.PNG)
 
-8. Далее производиться создание и настройка балансировщика нагрузки.
+4. Проверка доступности хостов с помощью утилиты с помощью Ansible создаётся два веб-сервера на основе Nginx.
 
-9. В результате создан сайт и возможно балансировать нагрузку между двумя веб-серверами.
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок.PNG)
+
+5. Далее производиться создание и настройка балансировщика нагрузки.
+
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок18.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок19.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок20.PNG)
+
+6. В результате создан сайт и возможно балансировать нагрузку между двумя веб-серверами.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок1.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок3.PNG)
 
-10. С помощью Ansible создаётся Zabbix-сервер и Zabbix-агенты на двух веб-серверах.
+7. С помощью Ansible создаётся Zabbix-сервер и Zabbix-агенты на двух веб-серверах.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок4.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок5.PNG)
 
-11. Резуьтат настройки Zabbix под необходимые задачи.
+8. Результат настройки Zabbix под необходимые задачи и ссылка на него - http://51.250.31.127/zabbix.
 
-12. С помощью Ansible разворачиваем стэк Elasticsearch, Kibana, Filebeat.
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок13.PNG)
+![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок14.PNG)
+
+9. С помощью Ansible разворачиваем стэк Elasticsearch, Kibana, Filebeat.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок6.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок7.PNG)
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок8.PNG)
 
-13. Результат развёртывания стэка ELK.
+10. Результат развёртывания стэка ELK и ссылка на него - http://89.169.169.113:5601.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок10.PNG)
 
-14. В Yandex.Cloud реализуется резервное копирование, настроенное в соотвествии с требованиями дипломной работы.
+11. В Yandex.Cloud реализуется резервное копирование, настроенное в соотвествии с требованиями дипломной работы.
 
 ![Альтернативный текст](https://github.com/VladisProtas/Diplom/blob/diplom-zabbix/Screenshots/Снимок9.PNG)
